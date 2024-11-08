@@ -2,24 +2,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 :root{
-    --cor-texto: #A594F9;
-    --cor-fundo: #F5EFFF;
-    --cor-segundaria: #00CCDD;
+    --bg-color: #A594F9;
+    --primary-color: #F5EFFF;
+    --secundary-color: #00CCDD;
     --cor-rosa: #F19ED2;
     --font: "Playfair Display", serif;
 }
 body{
-    background-color: var(--cor-fundo);
-    color: var(--cor-texto);
+    background-color: var(--bg-color);
+    color: var(--primary-color);
     font-family: var(--font);
+    height: 100vh;
+    margin: 0;
 }
 header{
-    background-color: var(--cor-secundaria);
+    background-color: var(--primary-color;);
     text-align: center;
+    padding: 1px;
 }
 h1{
-    font-size:2rem;
-    color:var(--cor-texto);
+    font-size: 2rem;
+    color: var(--cor-texto);
     font-weight: 700;
 }
 nav{
@@ -29,9 +32,13 @@ nav{
 }
 nav a{
     text-decoration: none;
-    color: var(--cor-texto);
-    margin: 0 2rem 1rem 0;
+    color: var(--bg-color);
+    margin: 0 2rem 1rem 0rem;
     font-size: 1.2rem;
+}
+nav a: hover{
+    text-decoration: underline;
+    transform: scale(0.90)
 }
 footer{
     display: flex;
